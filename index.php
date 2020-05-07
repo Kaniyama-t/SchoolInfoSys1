@@ -4,13 +4,13 @@
     </head>
     <h1>情シス1 授業課題デプロイ場所</h1>
     <?php
-        $dir = "/var/www/schoolis1";
+        $dir = "./";
         $filelist = glob($dir . '*.php');
 
         foreach ($filelist as $file) {
         
             if (is_file($file)) {
-                print($file);
+                print("<a href=\"./".substr($file,2,0)."\">".substr($file,2,0)."</a>");
                 echo nl2br("\n");
             }
         }
