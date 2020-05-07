@@ -26,16 +26,8 @@ jobs:
       run: ls
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.0   # FTPを使ってサーバーにDeployするアクションを実行
-<<<<<<< HEAD
-      env:                                        # FTP環境の設定を行う
-        ftp-server: ${{ secrets.FTP_SERVER }}     # FTPサーバーのURLを設定
-        ftp-username: ${{ secrets.FTP_USERNAME }} # FTPのユーザー名を設定
-        ftp-password: ${{ secrets.FTP_PASSWORD }} # FTPのパスワードを設定
-        local-dir: ./                             # どのディレクトリのデータをアップロードするか
-=======
       with:                                        # FTP環境の設定を行う
         ftp-server: ${{ secrets.FTP_SERVER }}     # FTPサーバーのURLを設定
         ftp-username: ${{ secrets.FTP_USERNAME }} # FTPのユーザー名を設定
         ftp-password: ${{ secrets.FTP_PASSWORD }} # FTPのパスワードを設定
         local-dir: ./                             # どのディレクトリのデータをアップロードするか
->>>>>>> d5deccc14f57c7a23a406d803a928e31f0832c7e
