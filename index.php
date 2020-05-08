@@ -6,7 +6,7 @@
     <hr />
     <h3>Github Repository</h3>
         <h4>Kaniyama-t/SchoolInfoSys1</h4>
-        <a href="https://github.com/Kaniyama-t/SchoolInfoSys1/"><img alt=".github/workflows/main.yml" src="https://github.com/Kaniyama-t/SchoolInfoSys1/workflows/CI/badge.svg?<?php echo date("YmdHis");?>" /></a>
+        最終更新のアップロード状況：<a href="https://github.com/Kaniyama-t/SchoolInfoSys1/"><img alt=".github/workflows/main.yml" src="https://github.com/Kaniyama-t/SchoolInfoSys1/workflows/CI/badge.svg?<?php echo date("YmdHis");?>" /></a>
     <hr />
     <h3>ファイル一覧</h3>
     <?php
