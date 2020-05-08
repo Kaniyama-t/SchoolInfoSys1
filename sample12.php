@@ -6,10 +6,10 @@
 
 <body>
     <?php 
-        $filelist = `ls -la`; //ファイルの一覧コマンド
-        echo "<pre>¥n$filelist</pre>¥n";
+        $filelist = `ls -la | grep '.php$'`; //ファイルの一覧コマンド
+        echo '<pre>¥n$filelist</pre>¥n';
         $nitiji= `date`;
-        echo"日付：$nitiji<br>¥n"; 
+        echo'日付：$nitiji<br>¥n'; 
     ?>
 </body>
 
