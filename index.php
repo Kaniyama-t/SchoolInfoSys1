@@ -75,9 +75,9 @@ function get_json_from_api($method, $url)
     </a>
 
     <div class="w3-container">
+        <a href="https://github.com/Kaniyama-t/SchoolInfoSys1/"><img alt=".github/workflows/main.yml" src="https://github.com/Kaniyama-t/SchoolInfoSys1/workflows/CI/badge.svg?<?php echo date("YmdHis"); ?>" /></a>
+        <br /><br />
         <?= $repo['description'] ?>
-        <br />
-        Latest Upload Status：<a href="https://github.com/Kaniyama-t/SchoolInfoSys1/"><img alt=".github/workflows/main.yml" src="https://github.com/Kaniyama-t/SchoolInfoSys1/workflows/CI/badge.svg?<?php echo date("YmdHis"); ?>" /></a>
         <br /><br />
 
         <?php
