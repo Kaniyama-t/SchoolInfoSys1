@@ -10,6 +10,6 @@
             print($i."月28日");
         else
             print("ERROR: length over");
-        print("<br />")
+        print("<br />");
     }
 ?>
