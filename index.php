@@ -144,9 +144,9 @@ function get_json_from_api($method, $url)
                 
                 // CI結果表示
                 if(true){
-                    $ci_status = '<i class="fa fa-check-circle" aria-hidden="true"></i>'
+                    $ci_status = '<i class="fa fa-check-circle" aria-hidden="true"></i>';
                 }else{
-                    $ci_status = '<i class="fa fa-times-circle" aria-hidden="true"></i>'
+                    $ci_status = '<i class="fa fa-times-circle" aria-hidden="true"></i>';
                 }
 
                 print('<li class="w3-bar w3-hover-gray"><a href="./' . $file_name . '">');
