@@ -58,6 +58,9 @@ function get_json_from_api($method, $url)
                 margin: 2em 1em;
             }
         }
+        #more {
+            display: none;
+        }
     </style>
 </head>
 <h1>Deploy Space for Lecture that "Information Systems 1"</h1>
@@ -160,7 +163,35 @@ function get_json_from_api($method, $url)
     <ul>
         <li><a href="https://www.flaticon.com/free-icon/php_187682">Php free icon : Designed by Freepik and distributed by Flaticon</a></li>
     </ul>
+    <br />
+
+    <h5 class="w3-container w3-blue">PHP Information</h5>
+    <span id="more">
+        <?php
+            phpinfo()
+        ?>
+    </span>
+    <br />
+    <button onclick="myFunction()" id="myBtn">View</button>
+    <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
     <br /><br />
+
 </div>
 
 </html>
