@@ -154,7 +154,7 @@ function get_json_from_api($method, $url)
                 print('<img src="src/php.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">');
                 print('<div class="w3-bar-item">');
 
-                print('<span class="w3-large">' . substr($file, 2) . '</span>' . $ci_status);
+                print('<span class="w3-large">' . substr($file, 2) . '</span> ' . $ci_status);
                 print('<br />');
                 print('<span>[TBD] Latest Commit Message</span>');
                 print('</div>');
