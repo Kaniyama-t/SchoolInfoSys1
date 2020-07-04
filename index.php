@@ -141,12 +141,20 @@ function get_json_from_api($method, $url)
 
             if (is_file($file)) {
                 $file_name = substr($file, 2);
+                
+                // CI結果表示
+                if(true){
+                    $ci_status = '<i class="fa fa-check-circle" aria-hidden="true"></i>'
+                }else{
+                    $ci_status = '<i class="fa fa-times-circle" aria-hidden="true"></i>'
+                }
+
                 print('<li class="w3-bar w3-hover-gray"><a href="./' . $file_name . '">');
                 //print('<i class="fa fa-file-code-o" class="w3-bar-item w3-circle w3-hide-small" style="width:85px"></i>');
                 print('<img src="src/php.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">');
                 print('<div class="w3-bar-item">');
 
-                print('<span class="w3-large">' . substr($file, 2) . '</span>');
+                print('<span class="w3-large">' . substr($file, 2) . '</span>' . $ci_status);
                 print('<br />');
                 print('<span>[TBD] Latest Commit Message</span>');
                 print('</div>');
