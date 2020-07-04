@@ -166,27 +166,24 @@ function get_json_from_api($method, $url)
     <br />
 
     <h5 class="w3-container w3-blue">PHP Information</h5>
+    <button onclick="myFunction()" id="myBtn">View</button>
+    <br />
     <span id="more">
         <?php
             phpinfo()
         ?>
     </span>
-    <br />
-    <button onclick="myFunction()" id="myBtn">View</button>
     <script>
     function myFunction() {
-      var dots = document.getElementById("dots");
       var moreText = document.getElementById("more");
       var btnText = document.getElementById("myBtn");
 
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more"; 
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less"; 
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Close"; 
         moreText.style.display = "inline";
+      } else {
+        moreText.style.display = "none";
+        btnText.innerHTML = "View"; 
       }
     }
     </script>
