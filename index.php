@@ -132,6 +132,19 @@ function get_json_from_api($method, $url)
     <h5 class="w3-container w3-blue">
         Files
     </h5>
+
+    <form class="w3-container">
+        <label>検索</label>
+        <input class="w3-input" type="text" id="searchText">
+        <button class="w3-button w3-dark-grey" onclick="search()" id="SearchBtn">Search</button>
+    </form>
+    <script>
+    function search() {
+      var searchBox = document.getElementById("searchText");
+      var searchText = searchBox.value;
+    }
+    </script>
+
     <ul class="w3-ul">
         <?php
         $dir = "./";
@@ -174,7 +187,7 @@ function get_json_from_api($method, $url)
     <br />
 
     <h5 class="w3-container w3-blue">PHP Information</h5>
-    <button onclick="myFunction()" id="myBtn">View</button>
+    <button class="w3-button w3-dark-grey" onclick="myFunction()" id="PHPInfoViewBtn">View</button>
     <br />
     <span id="more">
         <?php
@@ -184,7 +197,7 @@ function get_json_from_api($method, $url)
     <script>
     function myFunction() {
       var moreText = document.getElementById("more");
-      var btnText = document.getElementById("myBtn");
+      var btnText = document.getElementById("PHPInfoViewBtn");
 
       if (moreText.style.display === "none") {
         btnText.innerHTML = "Close"; 
