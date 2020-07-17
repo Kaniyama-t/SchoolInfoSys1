@@ -4,3 +4,12 @@
     
     「10! ＝3628800」
 -->
+
+<?php
+function fact($i){
+    if($i > 1)
+        return fact($i-1) * $i;
+    return 1;
+}
+echo(fact(10));
+?>
