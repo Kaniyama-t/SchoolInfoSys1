@@ -9,7 +9,7 @@ subject08.php
         isset($_POST["lastname"]) &&
         isset($_POST["firstname"]) &&
         isset($_POST["gender"]) &&
-        isset($_POST["age"])        
+        isset($_POST["age"])
     ){
         print("わたしは".$_POST["lastname"].$_POST["firstname"]."です．<br />");
         if($_POST["gender"] == "man"){

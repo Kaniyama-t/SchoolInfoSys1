@@ -16,7 +16,7 @@
                 print(fgets($fh));
             }else{
                 print("パスワードを登録してください．<br />");
-                print("<form action='subject09.php action='POST'>\n");
+                print("<form action='subject09.php method='POST'>\n");
                 print("<input type='password' name='password' /> 登録するパスワード\n");
                 print("<input type='submit' value='送信' />\n");
                 print("</form>");
