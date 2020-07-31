@@ -1,7 +1,7 @@
 <html>
 <form name="sample34.php" method="POST">
 複数行テキスト<br>
-<textarearows=3 cols=20 name="abc"></textarea>
+<textarea rows=3 cols=20 name="abc"></textarea>
 <input type="submit" value="送信">
 </form>
 <?php

@@ -4,7 +4,7 @@
 </head>
 <body>
 <?php
-$filename="./temp/file1.text";
+$filename="./tmp/file1.txt";
  if (file_exists($filename)){
 $fh=@fopen($filename, "r");
  //読み取りモードで  開く(＠でエラー制御)

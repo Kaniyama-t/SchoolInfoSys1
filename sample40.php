@@ -5,7 +5,7 @@
 <body>
 <b> 更新ボタンで更新してください。<br>[現在時刻==> 乱数]のデータがファイルに追加されます。</b><p>
 <?php
-    $filename = "./temp/file1.text";
+    $filename = "./tmp/file1.txt";
     $fh = @fopen($filename, "a");
     //追加書き込みモードで開く(＠でエラー制御)
     if ($fh){
