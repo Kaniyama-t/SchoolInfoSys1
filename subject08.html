@@ -1,5 +1,31 @@
-<!-- ［結果の表示］
-subject08.php
-わたしは，xxxyyyです。
-性別は，zzです。
-年齢は，ssです。 -->
+<!--
+    ［入力画面］
+    subject08.html
+    姓xxx名yyy（text）
+    性別 ○男性○女性（radioボタン）
+    年齢18,19,20,21,22（プルダウンメニュー）
+-->
+
+<html>
+    <head>
+        <title>sample08.html</title>
+    </head>
+    <body>
+        <form action="subject08.php" action="POST">
+            <input type="text" name="lastname" />姓
+            <input type="text" name="firstname" />名
+            <br />
+            <input type="radio" name="gender" value="man" />男
+            <input type="radio" name="gender" value="women" />女
+            <br />
+            <select name="age">
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+            </select>
+
+            <input type="submit" value="送信" />
+        </form>
+    </body>
+</html>
