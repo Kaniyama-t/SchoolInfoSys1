@@ -18,7 +18,7 @@
                 }
             }else{
                 print("パスワードを入力してください．<br />");
-                print("<form action='subject10.php method='POST'>\n");
+                print("<form action='subject10.php' method='POST'>\n");
                 print("<input type='password' name='password' /> パスワード\n");
                 print("<input type='submit' value='送信' />\n");
                 print("</form>");
