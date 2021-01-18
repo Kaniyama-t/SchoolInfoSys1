@@ -133,10 +133,10 @@ function get_json_from_api($method, $url)
         Files
     </h5>
 
-    <form class="w3-container">
+    <form class="w3-container" action="index.php" method="GET">
         <label>検索</label>
-        <input class="w3-input" type="text" id="searchText">
-        <button class="w3-button w3-dark-grey" onclick="search()" id="SearchBtn">Search</button>
+        <input class="w3-input" type="text" id="searchText" name="searchText">
+        <input type="submit" class="w3-button w3-dark-grey" id="SearchBtn" value="Search" />
     </form>
     <script>
     function search() {
@@ -161,6 +161,10 @@ function get_json_from_api($method, $url)
                 }else{
                     $ci_status = '<i class="fa fa-times-circle" aria-hidden="true"></i>';
                 }
+		
+		if(isset($_GET['searchText']) && (mb_strpos($file_name, $_GET['searchText']) === false)){
+			continue;
+		}
 
                 print('<li class="w3-bar w3-hover-gray"><a href="./' . $file_name . '">');
                 //print('<i class="fa fa-file-code-o" class="w3-bar-item w3-circle w3-hide-small" style="width:85px"></i>');
